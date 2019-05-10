@@ -1,0 +1,45 @@
+/* global vars */
+:root {
+  --montserrat: 'Montserrat', sans-serif;
+  --oswald: 'Oswald', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--montserrat);
+  font-size: 16px;
+  margin: 0;
+  text-align: center;
+  /* temporary */
+  height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--oswald);
+}
+
+.banner {
+  background: url("assets/justin-bust.jpg") no-repeat right fixed;
+  background-size: cover;
+  height: 50vh;
+}
+
+.contact {
+  background-color: #2f2f2f;
+  height: 50vh;
+}
+
+.title-box {
+  background-color: cadetblue;
+  width: 80vw;
+  height: 10vh;
+}
