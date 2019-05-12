@@ -3,7 +3,7 @@
   --montserrat: 'Montserrat', sans-serif;
   --oswald: 'Oswald', sans-serif;
   --base-font: calc(18px + (24 - 18) * (100vw - 300px) / (1600 - 300));
-  --base-title-font: calc(var(--base-font) + 1rem)
+  --base-title-font: calc(var(--base-font) + 1rem);
 }
 
 html {
@@ -27,6 +27,7 @@ body {
 }
 
 h1, h2, h3 {
+  font-size: 90%;
   font-family: var(--oswald);
   margin: 0 auto;
 }
@@ -47,22 +48,21 @@ a, a:link, a:visited, a:focus, a:hover, a:active {
   background-color: #fff;
   position: absolute;
   z-index: 10;
-  padding: 1rem 3rem;
+  padding: 1rem 1.5rem;
   width: max-content;
   height: max-content;
-  bottom: -25px;
+  left: calc(25px + (80 - 25) * (100vw - 300px) / (1600 - 300));
+  bottom: calc(-15px + (80 - 15) * (100vw - 300px) / (1600 - 300) * -1);
+  border: 12px double cadetblue;
 }
 
 .title-box h1 {
-  font-size: var(--base-title-font);
   letter-spacing: .15rem;
 }
 
 .title-box h2 {
+  color: #777;
   text-transform: lowercase;
-  text-decoration: underline;
-  text-decoration-color: cadetblue;
-  text-decoration-line: 5px;
   font-family: var(--montserrat);
 }
 
